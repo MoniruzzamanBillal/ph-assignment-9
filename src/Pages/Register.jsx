@@ -27,9 +27,9 @@ const Register = () => {
     console.log(emailInput.value);
     console.log(passwordInput.value);
 
-    // nameInput.reset();
-    // imageInput.reset();
-    // emailInput.reset();
+    nameInput.reset();
+    imageInput.reset();
+    emailInput.reset();
     passwordInput.reset();
   };
 
