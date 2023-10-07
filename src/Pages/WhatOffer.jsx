@@ -20,7 +20,7 @@ const WhatOffer = () => {
         {/* left side of offer  */}
         <div className="offerLeft order-2 sm:order-1  w-[100%] sm:w-[59%] lg:w-[58%] grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-2 sm:gap-x-3 sm:gap-y-5 ">
           {offer.map((ele, ind) => (
-            <WhatOfferCard ele={ele} />
+            <WhatOfferCard key={ind} ele={ele} />
           ))}
         </div>
         {/* left side of offer  */}

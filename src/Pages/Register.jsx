@@ -34,11 +34,11 @@ const Register = () => {
   };
 
   return (
-    <div className="RegisterContainer  ">
+    <div className="RegisterContainer pt-[3.8rem] ">
       <div className="RegisterWrapper">
         {/* login body   */}
-        <div className="registerInput bg-gray-200 w-[45%] m-auto flex flex-col justify-center items-center py-9 px-7 shadow-md ">
-          <h1 className="  w-full text-center block text-2xl font-semibold pb-5 mb-4 border-b border-gray-400 ">
+        <div className="registerInput bg-gray-200 w-[88%] sm:w-[72%] md:w-[62%] lg:w-[46%]  m-auto flex flex-col justify-center items-center py-3 sm:py-7 md:py-8 lg:py-9 px-2 sm:px-6 md:px-7 shadow-md ">
+          <h1 className=" w-full text-center block text-lg sm:text-xl md:text-2xl font-semibold pb-2 sm:pb-3 md:pb-4 lg:pb-5 mb-2 sm:mb-3 md:mb-4 border-b border-gray-400 ">
             Register your account
           </h1>
 

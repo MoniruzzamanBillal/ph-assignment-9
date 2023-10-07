@@ -5,7 +5,8 @@
     "image": "https://i.ibb.co/hf4xqxw/sdfdsv.jpg",
     "icon": "https://i.ibb.co/MRB18WD/icons8-catering-64.png",
     "shortDescription": "Crafting unforgettable birthday parties that leave lasting impressions while you make cherished memories with loved ones, our specialized event organization team has you covered.",
-    "description": "lorem"
+    "description": "lorem",
+    "price": "250"
   },
   {
     "id": "1",
@@ -13,24 +14,26 @@
     "image": "https://i.ibb.co/4NDt3R3/chrismas.jpg",
     "icon": "https://i.ibb.co/j42FM73/icons8-decoration-64.png",
     "shortDescription": "Transform your holiday season with our expert event team, creating a Christmas celebration filled with warmth, cheer, and cherished memories that last a lifetime.",
-    "description": "lorem"
+    "description": "lorem",
+    "price": "600"
   },
   {
     "id": "2",
     "name": "Engagement",
     "image": "https://i.ibb.co/xMGp8Kt/engagement.jpg",
     "icon": "https://i.ibb.co/k2KvVxW/icons8-photo-50.png",
+    "shortDescription": "Elevate your engagement ceremony with our event team, orchestrating a magical celebration that places your love story at its heart, from venue to decor, every detail tailored to you.",
     "description": "lorem",
-    "shortDescription": "Elevate your engagement ceremony with our event team, orchestrating a magical celebration that places your love story at its heart, from venue to decor, every detail tailored to you."
+    "price": "725"
   },
   {
     "id": "3",
     "name": "Graduation",
-
     "image": "https://i.ibb.co/cTjTCpZ/graduation.jpg",
     "icon": "https://i.ibb.co/TvRRZkY/icons8-gift-40.png",
+    "shortDescription": "Mark the culmination of your academic journey with a graduation event tailored to your achievements and aspirations, expertly orchestrated by our event organization team to fill your special day with pride, joy, and unforgettable moments.",
     "description": "lorem",
-    "shortDescription": "Mark the culmination of your academic journey with a graduation event tailored to your achievements and aspirations, expertly orchestrated by our event organization team to fill your special day with pride, joy, and unforgettable moments."
+    "price": "260"
   },
   {
     "id": "4",
@@ -38,7 +41,8 @@
     "image": "https://i.ibb.co/gM0vm5q/retirementparty.jpg",
     "icon": "https://i.ibb.co/0VDW75p/icons8-entertainment-50.png",
     "shortDescription": "Join us for an unforgettable Retirement Party, celebrating a lifetime of achievement and bidding farewell to a remarkable career as you embark on a new chapter of relaxation and adventure.",
-    "description": "lorem"
+    "description": "lorem",
+    "price": "380"
   },
   {
     "id": "5",
@@ -46,6 +50,7 @@
     "image": "https://i.ibb.co/GVPyFfw/wedding.jpg",
     "icon": "https://i.ibb.co/BKtH4yx/icons8-venue-50.png",
     "shortDescription": "Transform your dream wedding into a reality with our expert planning services, crafting perfect details and filling every moment with love and joy, from intimate ceremonies to grand celebrations.",
-    "description": "lorem"
+    "description": "lorem",
+    "price": "1200"
   }
 ]
