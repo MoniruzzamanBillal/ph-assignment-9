@@ -5,7 +5,7 @@ import WhatOffer from "./WhatOffer";
 
 const Home = () => {
   return (
-    <div className="homeContainer w-[85%] m-auto   ">
+    <div className="homeContainer w-[90%] md:w-[85%] m-auto   ">
       {/* banner component  */}
       <div className="bannerContainer  mb-10 pt-[3.7rem] ">
         <Banner />

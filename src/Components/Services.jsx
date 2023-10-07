@@ -12,16 +12,18 @@ const Services = () => {
     <div className="serviceContainer ">
       <div className="serviceWrapper   ">
         {/* service top  */}
-        <h1 className="  text-3xl text-center mb-3 font-bold ">Our services</h1>
+        <h1 className=" text-xl sm:text-2xl lg:text-3xl text-center mb-3 font-bold ">
+          Our services
+        </h1>
 
-        <p className=" mb-6 w-[60%] m-auto text-3xl text-center font-semibold text-gray-600 ">
+        <p className=" mb-6  w-[85%] sm:w-[70%] md:w-[60%] m-auto text-xl sm:text-2xl lg:text-3xl text-center font-semibold text-gray-600 ">
           We’ll make your next celebration very special!
         </p>
 
         {/* service top  */}
 
         {/* service card section  */}
-        <div className="serviceCard  grid grid-cols-3 gap-x-6 gap-y-5 ">
+        <div className="serviceCard  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-3 ">
           {services.map((ele, ind) => (
             <div key={ind}>
               <ServiceCard ele={ele} />

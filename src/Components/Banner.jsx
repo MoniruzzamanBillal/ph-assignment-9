@@ -25,10 +25,12 @@ const Banner = () => {
           {/* banner content  */}
           <div className=" bg-red-5000 text-center text-neutral-content absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <div className="w-[80%] bg-blue-5000 m-auto ">
-              <h1 className="mb-8 text-xl font-bold italic ">
+              <h1 className="mb-4 text-base sm:text-lg md:text-xl font-bold italic ">
                 Let's have a party
               </h1>
-              <p className=" text-5xl font-semibold ">It's time to celebrate</p>
+              <p className=" text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold ">
+                It's time to celebrate
+              </p>
               {/* <button className="btn btn-primary">Get Started</button> */}
             </div>
           </div>
@@ -52,10 +54,12 @@ const Banner = () => {
           {/* banner content  */}
           <div className=" bg-red-5000 text-center text-neutral-content absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <div className="w-[80%] bg-blue-5000 m-auto ">
-              <h1 className="mb-8 text-xl font-bold italic ">
+              <h1 className="mb-4 text-base sm:text-lg md:text-xl font-bold italic ">
                 Let's have a party
               </h1>
-              <p className=" text-5xl font-semibold ">We plan the best event</p>
+              <p className=" text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold ">
+                We plan the best event
+              </p>
             </div>
           </div>
           {/* banner content  */}
@@ -79,10 +83,12 @@ const Banner = () => {
           {/* banner content  */}
           <div className=" bg-red-5000 text-center text-neutral-content absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <div className="w-[80%] bg-blue-5000 m-auto ">
-              <h1 className="mb-8 text-xl font-bold italic ">
+              <h1 className="mb-4  text-base sm:text-lg md:text-xl font-bold italic ">
                 Let's have a party
               </h1>
-              <p className=" text-5xl font-semibold ">Enjoy your celebration</p>
+              <p className=" text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold ">
+                Enjoy your celebration
+              </p>
             </div>
           </div>
           {/* banner content  */}
@@ -106,10 +112,10 @@ const Banner = () => {
           {/* banner content  */}
           <div className=" bg-red-5000 text-center text-neutral-content absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <div className="w-[80%] bg-blue-5000 m-auto ">
-              <h1 className="mb-8 text-xl font-bold italic ">
+              <h1 className="mb-4 text-base sm:text-lg md:text-xl font-bold italic ">
                 Let’s Plan Your Next Event Together
               </h1>
-              <p className=" text-5xl font-semibold ">
+              <p className=" text-lg sm:text-xl  md:text-3xl lg:text-5xl font-semibold ">
                 We cordially invite you to collaborate with us in orchestrating
                 your upcoming event to perfection.
               </p>
@@ -119,17 +125,6 @@ const Banner = () => {
         </div>
         {/* slider 4 */}
       </div>
-
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
-      {/*  */}
     </div>
   );
 };

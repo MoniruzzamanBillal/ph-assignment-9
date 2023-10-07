@@ -14,13 +14,11 @@ const WhatOffer = () => {
     getItem();
   }, []);
 
-  console.log(offer);
-
   return (
     <div className=" offerContainer  ">
       <div className="offerWrapper flex flex-col sm:flex-row sm:justify-between  ">
         {/* left side of offer  */}
-        <div className="offerLeft order-2 sm:order-1  w-[100%] sm:w-[59%] lg:w-[58%] grid grid-cols-2 md:grid-cols-3 gap-x-3 gap-y-3 ">
+        <div className="offerLeft order-2 sm:order-1  w-[100%] sm:w-[59%] lg:w-[58%] grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-2 sm:gap-x-3 sm:gap-y-5 ">
           {offer.map((ele, ind) => (
             <WhatOfferCard ele={ele} />
           ))}
@@ -28,7 +26,7 @@ const WhatOffer = () => {
         {/* left side of offer  */}
 
         {/* right side of offer  */}
-        <div className="offerRight order-1 sm:order-2 mb-8 sm:mb-0  w-[100%] sm:w-[39%] lg:w-[38%] ">
+        <div className="offerRight order-1 sm:order-2 mb-9 sm:mb-0  w-[100%] sm:w-[39%] lg:w-[38%] ">
           {/* offer right top  */}
           <h1 className=" text-center sm:text-start text-5xl sm:text-4xl md:text-5xl lg:text-6xl mb-4 w-full sm:w-[92%] md:w-[84%] lg:w-[78%] font-bold">
             What we offer
