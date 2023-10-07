@@ -26,11 +26,9 @@ const Banner = () => {
           <div className=" bg-red-5000 text-center text-neutral-content absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <div className="w-[80%] bg-blue-5000 m-auto ">
               <h1 className="mb-8 text-xl font-bold italic ">
-                We are the Event Management Specialists
+                Let's have a party
               </h1>
-              <p className=" text-5xl font-semibold ">
-                WE PERSONALIZE YOUR WEDDING EVENTS
-              </p>
+              <p className=" text-5xl font-semibold ">It's time to celebrate</p>
               {/* <button className="btn btn-primary">Get Started</button> */}
             </div>
           </div>
@@ -55,11 +53,9 @@ const Banner = () => {
           <div className=" bg-red-5000 text-center text-neutral-content absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <div className="w-[80%] bg-blue-5000 m-auto ">
               <h1 className="mb-8 text-xl font-bold italic ">
-                Eternalize Your Moments: Celebrate Lasting Events!
+                Let's have a party
               </h1>
-              <p className=" text-5xl font-semibold ">
-                CELEBRATE YOUR EVENTS THAT LASTS LONGER
-              </p>
+              <p className=" text-5xl font-semibold ">We plan the best event</p>
             </div>
           </div>
           {/* banner content  */}
@@ -84,13 +80,9 @@ const Banner = () => {
           <div className=" bg-red-5000 text-center text-neutral-content absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <div className="w-[80%] bg-blue-5000 m-auto ">
               <h1 className="mb-8 text-xl font-bold italic ">
-                Wedding Inspiration and Supplier Recommendations for Your
-                Special Day.
+                Let's have a party
               </h1>
-              <p className=" text-5xl font-semibold ">
-                Genuine Wedding Experiences to Inspire Your Own Celebration,
-                Along with Relevant Supplier References.
-              </p>
+              <p className=" text-5xl font-semibold ">Enjoy your celebration</p>
             </div>
           </div>
           {/* banner content  */}

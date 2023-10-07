@@ -1,0 +1,44 @@
+[
+  {
+    "id": "0",
+    "name": "Catering",
+    "icon": "https://i.ibb.co/MRB18WD/icons8-catering-64.png",
+    "shortDescription": "The best food from the most famous restaurants",
+    "description": "lorem"
+  },
+  {
+    "id": "1",
+    "name": "decoration",
+    "icon": "https://i.ibb.co/j42FM73/icons8-decoration-64.png",
+    "shortDescription": "We offer decoration services to elevate your wedding into an unforgettable and memorable experience.",
+    "description": "lorem"
+  },
+  {
+    "id": "2",
+    "name": "Photography",
+    "icon": "https://i.ibb.co/k2KvVxW/icons8-photo-50.png",
+    "description": "lorem",
+    "shortDescription": "We provide the services of a professional photographer to skillfully capture your most cherished moments."
+  },
+  {
+    "id": "3",
+    "name": "Invitation cards",
+    "icon": "https://i.ibb.co/TvRRZkY/icons8-gift-40.png",
+    "description": "lorem",
+    "shortDescription": "We offer expert assistance in selecting your invitation card."
+  },
+  {
+    "id": "4",
+    "name": "Entertainment",
+    "icon": "https://i.ibb.co/0VDW75p/icons8-entertainment-50.png",
+    "description": "lorem",
+    "shortDescription": "Unforgettable entertainment, interesting programs"
+  },
+  {
+    "id": "5",
+    "name": "Venue Selection",
+    "icon": "https://i.ibb.co/BKtH4yx/icons8-venue-50.png",
+    "description": "lorem",
+    "shortDescription": "No one will arrange a better party or event than we"
+  }
+]
