@@ -25,8 +25,8 @@ const NavBar = () => {
     setToggle(!toggle);
   };
   return (
-    <div className="navContainer mb-4 py-2 ">
-      <div className="navWrapper   flex justify-between items-center ">
+    <div className="navContainer  py-2 bg-blue-100  fixed w-full z-20 shadow ">
+      <div className="navWrapper flex justify-between w-[85%] m-auto items-center ">
         {/* nav left  */}
         <div className="navLeft  ">
           <div className="navLeftImg">
