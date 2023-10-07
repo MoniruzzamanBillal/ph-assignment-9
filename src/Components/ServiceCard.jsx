@@ -4,9 +4,9 @@ const ServiceCard = ({ ele }) => {
   // console.log(ele);
   return (
     <div className="serviceCardContainer  ">
-      <div className="cursor-pointer h-[32rem]  flex flex-col justify-between items-center  bg-gray-50 border border-gray-200 rounded-lg shadow hover:bg-gray-100  ">
+      <div className="cursor-pointer h-[31rem]  flex flex-col justify-between items-center  bg-gray-50 border border-gray-200 rounded-lg shadow hover:bg-gray-100  ">
         {/* card image  */}
-        <div className="  h-[17rem] w-full ">
+        <div className="  h-[15rem] w-full ">
           <img class="rounded-t-lg w-full h-full" src={ele.image} alt="" />
         </div>
         {/* card image  */}
