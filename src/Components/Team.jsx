@@ -33,7 +33,7 @@ const Team = () => {
           <div className="teamLeftWrapper b text-center flex flex-col justify-center items-center ">
             {/* team left image  */}
             <div className="logoImg  mb-3 w-[4rem] md:w-[4.5rem] lg:w-[5rem] ">
-              <img src="/public/logo.png" className="w-full h-full" alt="" />
+              <img src="/logo.png" className="w-full h-full" alt="" />
             </div>
             {/* team left image  */}
             {/* team left top  */}
