@@ -34,7 +34,7 @@ const NavBar = () => {
               to={`/`}
               className="self-center cursor-pointer text-3xl font-semibold whitespace-nowrap "
             >
-              Flowbite
+              <img src="/logo.png" className="  w-[90%] " alt="" />
             </Link>
           </div>
         </div>
