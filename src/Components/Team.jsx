@@ -36,7 +36,6 @@ const Team = () => {
               <img src="/public/logo.png" className="w-full h-full" alt="" />
             </div>
             {/* team left image  */}
-
             {/* team left top  */}
             <h1 className="  text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4  font-bold">
               Meet the Team Behind the Magic! 🌟
@@ -68,8 +67,3 @@ const Team = () => {
 };
 
 export default Team;
-
-// https://i.ibb.co/jWLSctf/event-org-img4.png
-// https://i.ibb.co/6DQKmfP/event-org-img2.png
-// https://i.ibb.co/3rHCrkR/event-org-img3.png
-// https://i.ibb.co/zbXdVhT/event-org-img1.png
