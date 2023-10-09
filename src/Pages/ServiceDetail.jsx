@@ -38,10 +38,7 @@ const ServiceDetail = () => {
 
             {/* description 1  */}
             <h1 className=" mb-7 w-[100%] sm:w-[96%] md:w-[90%] lg:w-[85%] text-base sm:text-lg md:text-xl text-gray-100 ">
-              At EVENATOR, we specialize in transforming your dream wedding into
-              a breathtaking reality. Our expert planning services ensure that
-              every detail, from intimate ceremonies to grand celebrations, is
-              crafted with perfection and filled with love and joy.
+              {existData.description1}
             </h1>
             {/* description 1  */}
 
@@ -49,13 +46,7 @@ const ServiceDetail = () => {
 
             {/* description 2  */}
             <h1 className=" mb-9 w-[100%] sm:w-[96%] md:w-[90%] lg:w-[85%] text-base sm:text-lg md:text-xl text-gray-100 ">
-              Our dedicated team understands that your wedding day is a
-              momentous occasion, and we are committed to making it truly
-              unforgettable. From venue selection to exquisite decor, trust
-              EVENATOR to create a wedding experience that reflects your unique
-              love story and leaves you with cherished memories to last a
-              lifetime. Let us be your partner in celebrating the start of your
-              beautiful journey together.
+              {existData.description2}
             </h1>
             {/* description 2  */}
 
@@ -66,19 +57,19 @@ const ServiceDetail = () => {
               </h1>
               <h1 className=" text-sm sm:text-base md:text-lg mb-1 font-semibold ">
                 {" "}
-                Catering
+                {existData?.includ1 ? existData.includ1 : ""}
               </h1>
               <h1 className=" text-sm sm:text-base md:text-lg mb-1 font-semibold ">
                 {" "}
-                decoration
+                {existData?.includ2 ? existData.includ2 : ""}
               </h1>
               <h1 className=" text-sm sm:text-base md:text-lg  mb-1 font-semibold ">
                 {" "}
-                photography
+                {existData?.includ3 ? existData.includ3 : ""}
               </h1>
               <h1 className=" text-sm sm:text-base md:text-lg  mb-1 font-semibold ">
                 {" "}
-                etertainment
+                {existData?.includ4 ? existData.includ4 : ""}
               </h1>
             </div>
             {/* offers  */}
@@ -88,7 +79,7 @@ const ServiceDetail = () => {
             <div className="priceSection mt-2 mb-6 md:mb-7 text-base md:text-xl text-gray-100 ">
               <h1>
                 We arrange your event at affordible price starting{" "}
-                <span className=" font-bold ">200$</span>{" "}
+                <span className=" font-bold ">{existData.price}$</span>{" "}
               </h1>
             </div>
 
