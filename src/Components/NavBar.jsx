@@ -41,8 +41,6 @@ const NavBar = () => {
       .catch((error) => console.log(error));
   };
 
-  console.log(user?.displayName);
-
   return (
     <div className="navContainer  py-2 bg-blue-100  fixed w-full z-20 shadow ">
       <div className="navWrapper flex justify-between w-[96%] lg:w-[88%] m-auto items-center ">

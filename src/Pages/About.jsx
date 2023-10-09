@@ -20,21 +20,21 @@ const About = () => {
         <div className="cardContainer mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-auto">
           {/* vision card  */}
           <div className="vission ">
-            <div class=" bg-gray-50 border border-gray-200 rounded-lg shadow ">
+            <div className=" bg-gray-50 border border-gray-200 rounded-lg shadow ">
               <div>
                 <img
-                  class="rounded-t-lg"
+                  className="rounded-t-lg"
                   src="/images/Services/birthday.jpg"
                   alt=""
                 />
               </div>
-              <div class="p-5">
+              <div className="p-5">
                 <div>
-                  <h5 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 ">
+                  <h5 className="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 ">
                     Our Vision
                   </h5>
                 </div>
-                <p class=" text-center font-normal text-gray-700 ">
+                <p className=" text-center font-normal text-gray-700 ">
                   We envision simplifying event management through user-friendly
                   tools, fostering creativity, and ensuring every event is a
                   memorable success.
@@ -46,21 +46,21 @@ const About = () => {
 
           {/* approach  card  */}
           <div className="approach ">
-            <div class=" bg-gray-50 border border-gray-200 rounded-lg shadow ">
+            <div className=" bg-gray-50 border border-gray-200 rounded-lg shadow ">
               <div>
                 <img
-                  class="rounded-t-lg"
+                  className="rounded-t-lg"
                   src="/images/Services/graduation.jpg"
                   alt=""
                 />
               </div>
-              <div class="p-5">
+              <div className="p-5">
                 <div>
-                  <h5 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 ">
+                  <h5 className="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 ">
                     Our Approach
                   </h5>
                 </div>
-                <p class=" text-center font-normal text-gray-700 ">
+                <p className=" text-center font-normal text-gray-700 ">
                   We prioritize user-friendly design and innovation to simplify
                   event planning, empowering users with creative and reliable
                   solutions.
@@ -72,21 +72,21 @@ const About = () => {
 
           {/* goal  card  */}
           <div className="goal ">
-            <div class=" bg-gray-50 border border-gray-200 rounded-lg shadow ">
+            <div className=" bg-gray-50 border border-gray-200 rounded-lg shadow ">
               <div>
                 <img
-                  class="rounded-t-lg"
+                  className="rounded-t-lg"
                   src="/images/Services/wedding.jpg"
                   alt=""
                 />
               </div>
-              <div class="p-5">
+              <div className="p-5">
                 <div>
-                  <h5 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 ">
+                  <h5 className="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900 ">
                     Our Goal
                   </h5>
                 </div>
-                <p class=" text-center font-normal text-gray-700 ">
+                <p className=" text-center font-normal text-gray-700 ">
                   We aim to develop an intuitive event app that simplifies
                   planning, ignites creativity, and guarantees event success,
                   empowering users to effortlessly craft memorable experiences.

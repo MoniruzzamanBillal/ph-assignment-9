@@ -11,11 +11,13 @@ import Offers from "../Pages/Offers";
 import Pricing from "../Pages/Pricing";
 import About from "../Pages/About";
 import ServicePage from "../Pages/ServicePage";
+import ErrorPage from "../Pages/ErrorPage";
 
 const Router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

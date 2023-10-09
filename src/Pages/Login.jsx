@@ -70,8 +70,7 @@ const Login = () => {
   const handleGoogleLogin = () => {
     console.log("google login click");
     const googleProvider = new GoogleAuthProvider();
-    console.log(googleProvider);
-    console.log(auth);
+
     signInWithPopup(auth, googleProvider)
       .then((response) => {
         addedSuccessFully();

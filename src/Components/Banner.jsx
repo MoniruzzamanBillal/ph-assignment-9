@@ -20,7 +20,7 @@ const Banner = () => {
             </a>
           </div>
 
-          <div class=" absolute transform -translate-y-1/2 left-0 right-5 top-1/2 bg-gray-800 bg-opacity-70 w-full h-full"></div>
+          <div className=" absolute transform -translate-y-1/2 left-0 right-5 top-1/2 bg-gray-800 bg-opacity-70 w-full h-full"></div>
 
           {/* banner content  */}
           <div className=" bg-red-5000 text-center text-neutral-content absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -49,7 +49,7 @@ const Banner = () => {
             </a>
           </div>
 
-          <div class=" absolute transform -translate-y-1/2 left-0 right-5 top-1/2 bg-gray-800 bg-opacity-70 w-full h-full"></div>
+          <div className=" absolute transform -translate-y-1/2 left-0 right-5 top-1/2 bg-gray-800 bg-opacity-70 w-full h-full"></div>
 
           {/* banner content  */}
           <div className=" bg-red-5000 text-center text-neutral-content absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -78,7 +78,7 @@ const Banner = () => {
             </a>
           </div>
 
-          <div class=" absolute transform -translate-y-1/2 left-0 right-5 top-1/2 bg-gray-800 bg-opacity-70 w-full h-full"></div>
+          <div className=" absolute transform -translate-y-1/2 left-0 right-5 top-1/2 bg-gray-800 bg-opacity-70 w-full h-full"></div>
 
           {/* banner content  */}
           <div className=" bg-red-5000 text-center text-neutral-content absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -107,7 +107,7 @@ const Banner = () => {
             </a>
           </div>
 
-          <div class=" absolute transform -translate-y-1/2 left-0 right-5 top-1/2 bg-gray-800 bg-opacity-70 w-full h-full"></div>
+          <div className=" absolute transform -translate-y-1/2 left-0 right-5 top-1/2 bg-gray-800 bg-opacity-70 w-full h-full"></div>
 
           {/* banner content  */}
           <div className=" bg-red-5000 text-center text-neutral-content absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

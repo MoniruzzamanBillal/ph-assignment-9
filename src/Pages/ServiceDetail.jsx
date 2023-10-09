@@ -16,8 +16,6 @@ const ServiceDetail = () => {
     }
   }, []);
 
-  console.log(existData);
-
   return (
     <div className=" serviceDetailContainer   ">
       <div className="serviceDetailWrapper  mb-12 pt-[5rem] w-[95%] sm:w-[90%] md:w-[85%] m-auto ">
@@ -31,8 +29,8 @@ const ServiceDetail = () => {
             height: "55rem",
           }}
         >
-          <div class="w-full h-full flex flex-col justify-center py-5 px-4  backdrop-brightness-50 ">
-            <span class="text-white text-2xl sm:text-3xl md:text-4xl mb-8 md:mb-10 font-bold ">
+          <div className="w-full h-full flex flex-col justify-center py-5 px-4  backdrop-brightness-50 ">
+            <span className="text-white text-2xl sm:text-3xl md:text-4xl mb-8 md:mb-10 font-bold ">
               Welcome to Evenator
             </span>
 
