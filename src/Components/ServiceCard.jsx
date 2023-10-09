@@ -5,14 +5,13 @@ const ServiceCard = ({ ele }) => {
   const navigate = useNavigate();
 
   const handleNavigate = (id) => {
-    // console.log(`id in function = ${id}`);
     navigate(`/detail/${id}`);
   };
 
   // console.log(ele);
   return (
     <div className="serviceCardContainer  ">
-      <div className="cursor-pointer w-[80%] sm:w-[60%] md:w-auto m-auto h-[30rem] lg:h-[32rem]  flex flex-col justify-between items-center  bg-gray-50 border border-gray-200 rounded-lg shadow hover:bg-gray-100  ">
+      <div className="cursor-pointer w-[80%] sm:w-[60%] md:w-auto m-auto h-[30rem] lg:h-[32rem]  flex flex-col justify-between items-center  bg-gray-50 border border-gray-200 rounded-lg shadow hover:bg-gray-100 hover:shadow-md transform hover:-translate-y-2 duration-300 ">
         {/* card image  */}
         <div className=" h-[13rem] lg:h-[15rem] w-full ">
           <img class="rounded-t-lg w-full h-full" src={ele.image} alt="" />

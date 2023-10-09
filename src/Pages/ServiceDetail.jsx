@@ -28,7 +28,7 @@ const ServiceDetail = () => {
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            height: "50rem",
+            height: "55rem",
           }}
         >
           <div class="w-full h-full flex flex-col justify-center py-5 px-4  backdrop-brightness-50 ">
@@ -37,7 +37,7 @@ const ServiceDetail = () => {
             </span>
 
             {/* description 1  */}
-            <h1 className=" mb-7 w-[100%] sm:w-[96%] md:w-[90%] lg:w-[85%] text-base sm:text-lg md:text-xl text-gray-100 ">
+            <h1 className=" mb-7 w-[100%] sm:w-[96%] md:w-[90%] lg:w-[85%] text-base sm:text-lg md:text-xl text-white ">
               {existData.description1}
             </h1>
             {/* description 1  */}
@@ -45,13 +45,13 @@ const ServiceDetail = () => {
             {/*  */}
 
             {/* description 2  */}
-            <h1 className=" mb-9 w-[100%] sm:w-[96%] md:w-[90%] lg:w-[85%] text-base sm:text-lg md:text-xl text-gray-100 ">
+            <h1 className=" mb-9 w-[100%] sm:w-[96%] md:w-[90%] lg:w-[85%] text-base sm:text-lg md:text-xl text-white ">
               {existData.description2}
             </h1>
             {/* description 2  */}
 
             {/* offers  */}
-            <div className="offers text-gray-100 mb-5 md:mb-7 ">
+            <div className="offers text-white mb-5 md:mb-7 ">
               <h1 className=" font-bold text-xl sm:text-2xl md:text-3xl mb-1 sm:mb-2 ">
                 What we Offers:
               </h1>
@@ -76,7 +76,7 @@ const ServiceDetail = () => {
 
             {/* price section  */}
 
-            <div className="priceSection mt-2 mb-6 md:mb-7 text-base md:text-xl text-gray-100 ">
+            <div className="priceSection mt-2 mb-6 md:mb-7 text-base md:text-xl text-white ">
               <h1>
                 We arrange your event at affordible price starting{" "}
                 <span className=" font-bold ">{existData.price}$</span>{" "}

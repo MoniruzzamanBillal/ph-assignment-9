@@ -9,12 +9,20 @@ const navLink = [
     link: "/",
   },
   {
-    item: "About",
-    link: "/",
+    item: "Services",
+    link: "#service",
   },
   {
-    item: "Career",
-    link: "/",
+    item: "Offers",
+    link: "#offer",
+  },
+  {
+    item: "Pricing",
+    link: "#pricing",
+  },
+  {
+    item: "About us",
+    link: "#about",
   },
 ];
 
@@ -26,7 +34,7 @@ const NavBar = () => {
   };
   return (
     <div className="navContainer  py-2 bg-blue-100  fixed w-full z-20 shadow ">
-      <div className="navWrapper flex justify-between w-[85%] m-auto items-center ">
+      <div className="navWrapper flex justify-between w-[96%] lg:w-[88%] m-auto items-center ">
         {/* nav left  */}
         <div className="navLeft  ">
           <div className="navLeftImg  ">
@@ -36,7 +44,7 @@ const NavBar = () => {
             >
               <div className=" flex justify-center items-center  ">
                 <img src="/logo.png" className="  w-[35%] " alt="" />{" "}
-                <p className=" text-xl pl-2 ">Evenator</p>
+                <p className=" text-xl pl-1 ">Evenator</p>
               </div>
             </Link>
           </div>
@@ -48,11 +56,14 @@ const NavBar = () => {
           {navLink.map((ele, ind) => (
             <div
               key={ind}
-              className={` text-lg ${
-                ind === navLink.length - 1 ? "pr-0" : "pr-6"
+              className={` text-base lg:text-lg ${
+                ind === navLink.length - 1 ? "pr-0" : "pr-4"
               }  `}
             >
-              <p className="  cursor-pointer dark3 "> {ele.item} </p>
+              <a href={ele.link} className="  cursor-pointer dark3 ">
+                {" "}
+                {ele.item}{" "}
+              </a>
             </div>
           ))}
         </div>
@@ -65,7 +76,7 @@ const NavBar = () => {
             {/* avatar image  */}
             <div className="avaterImg pr-2">
               <img
-                className="w-10 h-10 p-1 rounded-full ring-1 ring-gray-300 dark:ring-gray-500"
+                className=" w-7 h-7 lg:w-9 lg:h-9 p-1 rounded-full ring-1 ring-gray-300 dark:ring-gray-500"
                 src="../../src/assets/2.png"
                 alt="Bordered avatar"
               />
@@ -74,7 +85,7 @@ const NavBar = () => {
 
             <Link
               to={`/login`}
-              className=" bg-gray-600 py-2 px-8  text-white font-semibold "
+              className=" bg-gray-600 py-1.5 lg:py-2 px-6 lg:px-7  text-white font-semibold "
             >
               Log in
             </Link>
@@ -110,8 +121,8 @@ const NavBar = () => {
             {/* menu list  */}
 
             {toggle && (
-              <div className="menuList text-center py-2 bg-gray-800 absolute transform -translate-x-1/2 -translate-y-1/2 -right-[5rem] top-[6.2rem] w-[10rem] ">
-                <div className="menuItem  ">
+              <div className="menuList text-center py-2 bg-gray-800 absolute transform -translate-x-1/2 -translate-y-1/2 -right-[4.8rem] top-[8.4rem] w-[10rem] ">
+                <div className="menuItem mb-4  ">
                   {navLink.map((ele, ind) => (
                     <div
                       key={ind}
@@ -119,19 +130,21 @@ const NavBar = () => {
                         ind === navLink.length - 1 ? "pb-0" : "pb-3"
                       }  `}
                     >
-                      <p
-                        className="cursor-pointer text-gray-50 "
+                      <a
+                        href={ele.link}
+                        className="  cursor-pointer text-gray-50 "
                         onClick={() => handleToggle()}
                       >
                         {" "}
                         {ele.item}{" "}
-                      </p>
+                      </a>
                     </div>
                   ))}
                 </div>
                 <Link
                   to={`/login`}
-                  className=" bg-red-400 mt-2 py-1 px-6  text-white "
+                  className=" bg-red-400  py-1.5 px-5  text-white "
+                  onClick={() => handleToggle()}
                 >
                   Log in
                 </Link>
