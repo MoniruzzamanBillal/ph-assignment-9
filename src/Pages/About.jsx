@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Team from "../Components/Team";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
-    <div className="aboutUs  pt-[6.5rem] mb-10 m-auto">
+    <div className="aboutUs  pt-[6.5rem] mb-10 m-auto " data-aos="zoom-in">
       {/* about top section  */}
       <div className="aboutTop mb-8  w-[95%] sm:w-[90%] md:w-[85%] m-auto ">
         <h1 className=" mb-5 text-2xl sm:text-3xl md:text-4xl text-center font-bold">

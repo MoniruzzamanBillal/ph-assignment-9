@@ -7,7 +7,7 @@ import Footer from "../Components/Footer";
 const Root = () => {
   return (
     <AppProvider>
-      <div className="rootContainer  ">
+      <div className="rootContainer overflow-x-hidden  ">
         {/* navbar component  */}
         <div className="navComponent  ">
           <NavBar />

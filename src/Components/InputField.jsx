@@ -10,7 +10,7 @@ const InputField = ({ heading, inpType, placeHolder, inputId, inputHook }) => {
           type={inpType}
           id={inputId}
           {...inputHook}
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm  outline-none focus: block w-full p-2.5"
+          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm  outline-none focus: block w-full p-2.5"
           placeholder={placeHolder}
           required
         />

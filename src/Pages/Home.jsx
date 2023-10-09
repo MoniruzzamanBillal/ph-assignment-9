@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Banner from "../Components/Banner";
 import Services from "../Components/Services";
 import WhatOffer from "./WhatOffer";
 import HolidayPackage from "../Components/HolidayPackage";
 import Team from "../Components/Team";
 import LoadingScleton from "../Components/LoadingScleton";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div className="homeContainer  ">
       {/* banner component  */}
@@ -19,6 +25,7 @@ const Home = () => {
       <div
         className="serviceContainer mb-20 w-[95%] sm:w-[90%] md:w-[85%] m-auto"
         id="service"
+        data-aos="fade-right"
       >
         <Services />
       </div>
@@ -28,6 +35,7 @@ const Home = () => {
       <div
         className="whatOffer mb-10 sm:mb-16 w-[95%] sm:w-[90%] md:w-[85%] m-auto"
         id="offer"
+        data-aos="fade-left"
       >
         <WhatOffer />
       </div>
@@ -37,13 +45,14 @@ const Home = () => {
       <div
         className="holidayPackage mb-10 w-[95%] sm:w-[90%] md:w-[85%] m-auto"
         id="pricing"
+        data-aos="zoom-in-up"
       >
         <HolidayPackage />
       </div>
       {/* holiday package container  */}
 
       {/* team component  */}
-      <div className="teamComponent mb-6 " id="about">
+      <div className="teamComponent mb-6 " id="about" data-aos="zoom-in">
         <Team />
       </div>
       {/* team component  */}
