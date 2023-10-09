@@ -24,7 +24,7 @@ const About = () => {
               <div>
                 <img
                   class="rounded-t-lg"
-                  src="../../public/images/Services/birthday.jpg"
+                  src="/images/Services/birthday.jpg"
                   alt=""
                 />
               </div>
@@ -50,7 +50,7 @@ const About = () => {
               <div>
                 <img
                   class="rounded-t-lg"
-                  src="../../public/images/Services/graduation.jpg"
+                  src="/images/Services/graduation.jpg"
                   alt=""
                 />
               </div>
@@ -76,7 +76,7 @@ const About = () => {
               <div>
                 <img
                   class="rounded-t-lg"
-                  src="../../public/images/Services/wedding.jpg"
+                  src="/images/Services/wedding.jpg"
                   alt=""
                 />
               </div>
