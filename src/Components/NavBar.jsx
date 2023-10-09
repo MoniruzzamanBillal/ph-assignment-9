@@ -62,21 +62,6 @@ const NavBar = () => {
 
         {/* nav Middle   */}
 
-        {/* <div className="navMiddle hidden sm:flex   ">
-          {navLink.map((ele, ind) => (
-            <div
-              key={ind}
-              className={` text-base lg:text-lg ${
-                ind === navLink.length - 1 ? "pr-0" : "pr-4"
-              }  `}
-            >
-              <a href={ele.link} className="  cursor-pointer dark3 ">
-                {ele.item}
-              </a>
-            </div>
-          ))}
-        </div> */}
-
         <div className="navLinks hidden md:flex ">
           {navLink.map((ele, ind) => (
             <NavLink
@@ -180,15 +165,6 @@ const NavBar = () => {
                     Log in
                   </Link>
                 )}
-
-                {/* 
-                <Link
-                  to={`/login`}
-                  className=" bg-red-400  py-1.5 px-5  text-white "
-                  onClick={() => handleToggle()}
-                >
-                  Log in
-                </Link> */}
               </div>
             )}
             {/* menu list  */}

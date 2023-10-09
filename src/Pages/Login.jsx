@@ -4,7 +4,6 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import UseInputHook from "../Hooks/InputHook";
 import InputField from "../Components/InputField";
 import { AppContext } from "../Context/Context";
-import LoadingScleton from "../Components/LoadingScleton";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -16,6 +15,8 @@ const Login = () => {
 
   const emailInput = UseInputHook();
   const passwordInput = UseInputHook();
+
+  // console.log(user);
 
   const addedSuccessFully = () =>
     toast.success("logged in successfully!", {
@@ -50,7 +51,7 @@ const Login = () => {
 
         setTimeout(() => {
           navigate(location?.state ? location.state : "/");
-        }, "1300");
+        }, "1200");
       })
       .catch((error) => {
         console.log(error);

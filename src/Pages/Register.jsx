@@ -6,10 +6,12 @@ import UseInputHook from "../Hooks/InputHook";
 import InputField from "../Components/InputField";
 import { AppContext } from "../Context/Context";
 import { updateProfile } from "firebase/auth";
-import LoadingScleton from "../Components/LoadingScleton";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
-  const { services, registerEmail, loading, setUser } = useContext(AppContext);
+  const { registerEmail, logOut } = useContext(AppContext);
 
   const navigate = useNavigate();
 
@@ -20,50 +22,136 @@ const Register = () => {
 
   const [isChecked, setIsChecked] = useState(false);
 
+  const handleLogout = () => {
+    logOut()
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
+  };
+
+  const registerSuccessfully = () =>
+    toast.success("Register successfully!", {
+      position: "top-center",
+      autoClose: 1200,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+
+  const termError = () =>
+    toast.warn("Select terms and conditions", {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  const inputFieldError = () =>
+    toast.warn("All fields are required", {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+  const passwordValidationError = () =>
+    toast.warn(
+      "Password should be at least 6 characters long, contain a capital letter, and a special character",
+      {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      }
+    );
+
+  // function for handling check box state
   const handleCheckboxChange = () => {
     setIsChecked(!isChecked);
   };
 
+  // Function to validate the password
+  const isPasswordValid = (password) => {
+    const minLength = 6;
+    const hasCapitalLetter = /[A-Z]/.test(password);
+    const hasSpecialCharacter = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(
+      password
+    );
+
+    return (
+      password.length >= minLength && hasCapitalLetter && hasSpecialCharacter
+    );
+  };
+
+  // registration password
   const handleRegister = () => {
     console.log("register click");
-    if (!isChecked) {
-      return alert("terms not selected");
-    }
 
-    // console.log(nameInput.value);
-    // console.log(imageInput.value);
-    // console.log(emailInput.value);
-    // console.log(passwordInput.value);
+    // Check any input fields are empty
+    if (
+      !nameInput.value.trim() ||
+      !imageInput.value.trim() ||
+      !emailInput.value.trim() ||
+      !passwordInput.value.trim()
+    ) {
+      return inputFieldError();
+    } else if (!isChecked) {
+      return termError();
+    } else if (!isPasswordValid(passwordInput.value)) {
+      return passwordValidationError();
+    }
 
     registerEmail(emailInput.value, passwordInput.value)
       .then((result) => {
-        // console.log(user);
-
-        // Update the user's profile
         const displayName = nameInput.value;
         const photoURL = imageInput.value;
 
         updateProfile(result.user, { displayName, photoURL })
           .then((user) => {
             console.log("User profile updated successfully:", user);
+
+            registerSuccessfully();
           })
           .catch((error) => {
             console.error("Error updating user profile:", error);
           });
-        setUser(null);
+        handleLogout();
+
         navigate(`/login`);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        const errormsg = error.message;
+        console.log(errormsg);
 
-    // nameInput.reset();
-    // imageInput.reset();
-    // emailInput.reset();
-    // passwordInput.reset();
+        toast.warn(`${errormsg}`, {
+          position: "top-center",
+          autoClose: 3000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+        });
+      });
+
+    nameInput.reset();
+    imageInput.reset();
+    emailInput.reset();
+    passwordInput.reset();
   };
-
-  if (loading) {
-    return <LoadingScleton />;
-  }
 
   return (
     <div className="RegisterContainer pt-[8rem] pb-[5rem]  ">
@@ -116,7 +204,7 @@ const Register = () => {
               />
             </div>
             <label
-              for="remember"
+              htmlFor="remember"
               className="ml-2 text-sm font-medium text-gray-800 "
             >
               I agree with the{" "}
@@ -135,6 +223,8 @@ const Register = () => {
           >
             Register
           </button>
+
+          <ToastContainer />
 
           <p className="  mt-3 ">
             Already have An Account ?
