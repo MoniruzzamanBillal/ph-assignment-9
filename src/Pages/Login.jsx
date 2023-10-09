@@ -20,7 +20,7 @@ const Login = () => {
   const addedSuccessFully = () =>
     toast.success("logged in successfully!", {
       position: "top-center",
-      autoClose: 3000,
+      autoClose: 1200,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -32,7 +32,7 @@ const Login = () => {
   const errorlogin = () =>
     toast.warn("Username or password is incorrect!!", {
       position: "top-center",
-      autoClose: 5000,
+      autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -47,13 +47,18 @@ const Login = () => {
     emailLogin(emailInput.value, passwordInput.value)
       .then((user) => {
         addedSuccessFully();
-        alert("login ");
-        navigate(location?.state ? location.state : "/");
+
+        setTimeout(() => {
+          navigate(location?.state ? location.state : "/");
+        }, "1300");
       })
       .catch((error) => {
         console.log(error);
         errorlogin();
       });
+
+    emailInput.reset();
+    passwordInput.reset();
   };
 
   return (

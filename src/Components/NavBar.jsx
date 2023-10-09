@@ -77,7 +77,7 @@ const NavBar = () => {
           ))}
         </div> */}
 
-        <div className="navLinks">
+        <div className="navLinks hidden md:flex ">
           {navLink.map((ele, ind) => (
             <NavLink
               key={ind}
@@ -96,7 +96,7 @@ const NavBar = () => {
         {/* nav right  */}
         <div className="navRight   ">
           {/* !mobile view  */}
-          <div className="notMobile hidden sm:flex justify-center items-center ">
+          <div className="notMobile hidden md:flex justify-center items-center ">
             {/* avatar image  */}
             <div className="avaterImg pr-2">
               {user?.photoURL && (
@@ -130,7 +130,7 @@ const NavBar = () => {
           {/*  */}
           {/* mobile view  */}
 
-          <div className="mobileView flex sm:hidden relative ">
+          <div className="mobileView flex md:hidden relative ">
             {/* menu icon  */}
             <div className="menuIcon text-2xl " onClick={() => handleToggle()}>
               {!toggle ? <RiMenu3Fill /> : <RiCloseFill />}
