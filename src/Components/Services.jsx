@@ -1,8 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import ServiceCard from "./ServiceCard";
 import { AppContext } from "../Context/Context";
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
+  const navigate = useNavigate();
+
   const { services } = useContext(AppContext);
 
   //   console.log(services);

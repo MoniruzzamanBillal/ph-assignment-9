@@ -7,9 +7,9 @@ import Team from "../Components/Team";
 
 const Home = () => {
   return (
-    <div className="homeContainer    ">
+    <div className="homeContainer  ">
       {/* banner component  */}
-      <div className="bannerContainer  mb-12 pt-[3.8rem] w-[95%] sm:w-[90%] md:w-[85%] m-auto ">
+      <div className="bannerContainer  mb-12 pt-[5.2rem] w-[95%] sm:w-[90%] md:w-[85%] m-auto ">
         <Banner />
       </div>
       {/* banner component  */}

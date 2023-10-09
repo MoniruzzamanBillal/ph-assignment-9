@@ -1,6 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ServiceCard = ({ ele }) => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (id) => {
+    // console.log(`id in function = ${id}`);
+    navigate(`/detail/${id}`);
+  };
+
   // console.log(ele);
   return (
     <div className="serviceCardContainer  ">
@@ -23,7 +31,10 @@ const ServiceCard = ({ ele }) => {
           {ele.price}
         </p>
 
-        <button className="bg-violet-500 mb-2 hover:bg-violet-600 px-5 py-2 rounded text-white font-semibold active:scale-95 ">
+        <button
+          className="bg-violet-500 mb-2 hover:bg-violet-600 px-5 py-2 rounded text-white font-semibold active:scale-95 "
+          onClick={() => handleNavigate(ele.id)}
+        >
           See details
         </button>
       </div>

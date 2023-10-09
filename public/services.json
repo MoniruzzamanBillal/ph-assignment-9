@@ -6,7 +6,14 @@
     "icon": "https://i.ibb.co/MRB18WD/icons8-catering-64.png",
     "shortDescription": "Crafting unforgettable birthday parties that leave lasting impressions while you make cherished memories with loved ones, our specialized event organization team has you covered.",
     "description": "lorem",
-    "price": "250"
+    "price": "1050",
+    "hour": "4",
+    "person": "10-60",
+    "includ1": "Catering",
+    "includ2": "decoration",
+    "includ3": "Photography",
+    "description1": "Welcome to Evenator, where we specialize in crafting unforgettable birthday parties. Our dedicated team transforms your vision into reality, ensuring a stress-free journey from concept to execution. Whether it's an intimate family gathering or a lavish themed extravaganza, we tailor our services to create magical moments.",
+    "description2": "At Evenator, we believe birthdays should be about joy and unforgettable memories. Our experienced team handles all aspects, from venue selection to entertainment, while you cherish moments with loved ones. With us, your birthday celebration becomes a remarkable event filled with cherished memories."
   },
   {
     "id": "1",
@@ -15,7 +22,14 @@
     "icon": "https://i.ibb.co/j42FM73/icons8-decoration-64.png",
     "shortDescription": "Transform your holiday season with our expert event team, creating a Christmas celebration filled with warmth, cheer, and cherished memories that last a lifetime.",
     "description": "lorem",
-    "price": "600"
+    "price": "800",
+    "hour": "6",
+    "person": "10-25",
+    "includ1": "Catering",
+    "includ2": "decoration",
+    "includ4": "Entertainment",
+    "description1": "Welcome to EVENATOR, where we specialize in turning your Christmas celebration into a magical experience filled with warmth and lasting memories. Our expert team is dedicated to ensuring a stress-free holiday season, allowing you to enjoy the true spirit of Christmas with your loved ones.",
+    "description2": "At EVENATOR, we bring creativity and expertise to every aspect of your Christmas event, from enchanting décor to delightful culinary experiences. Whether it's an intimate gathering or a grand extravaganza, let us handle the details while you savor the joy of the season. This Christmas, trust EVENATOR to make your festive dreams come true."
   },
   {
     "id": "2",
@@ -24,7 +38,14 @@
     "icon": "https://i.ibb.co/k2KvVxW/icons8-photo-50.png",
     "shortDescription": "Elevate your engagement ceremony with our event team, orchestrating a magical celebration that places your love story at its heart, from venue to decor, every detail tailored to you.",
     "description": "lorem",
-    "price": "725"
+    "price": "1425",
+    "hour": "5",
+    "person": "20-140",
+    "includ1": "Catering",
+    "includ2": "decoration",
+    "includ3": "Photography",
+    "description1": "At EVENATOR, we specialize in elevating your engagement ceremony into a magical celebration that revolves around your unique love story. From venue selection to décor, every detail is meticulously tailored to your vision, ensuring a ceremony that is as exceptional and memorable as your love.",
+    "description2": "Our experienced event team takes care of all the planning and coordination, allowing you to focus on the joyous moments of this significant milestone. With EVENATOR by your side, your engagement will be a reflection of your love story, filled with enchantment and cherished memories. Trust us to make your special day truly unforgettable."
   },
   {
     "id": "3",
@@ -33,7 +54,13 @@
     "icon": "https://i.ibb.co/TvRRZkY/icons8-gift-40.png",
     "shortDescription": "Celebrate your academic achievement with our expertly planned graduation event, filled with pride, joy, and unforgettable moments.",
     "description": "lorem",
-    "price": "260"
+    "price": "1560",
+    "hour": "9",
+    "person": "30-300",
+    "includ2": "decoration",
+    "includ3": "Photography",
+    "description1": "EVENATOR is here to help you celebrate your academic achievements with a graduation event that's expertly planned to perfection. We understand the significance of this milestone in your life and aim to fill your ceremony with pride, joy, and unforgettable moments.",
+    "description2": "Our dedicated team takes care of every detail, from venue selection to coordination, ensuring that your graduation celebration is a seamless and memorable experience for you and your loved ones. Let EVENATOR make your graduation day a momentous occasion that truly reflects your accomplishments and aspirations. "
   },
   {
     "id": "4",
@@ -42,7 +69,14 @@
     "icon": "https://i.ibb.co/0VDW75p/icons8-entertainment-50.png",
     "shortDescription": "Join us for an unforgettable Retirement Party, celebrating a lifetime of achievement and bidding farewell to a remarkable career as you embark on a new chapter of relaxation and adventure.",
     "description": "lorem",
-    "price": "380"
+    "price": "880",
+    "hour": "3",
+    "person": "10-30",
+    "includ1": "Catering",
+    "includ2": "decoration",
+    "includ3": "Photography",
+    "description1": "EVENATOR invites you to join us for an unforgettable Retirement Party, where we celebrate a lifetime of achievement and bid a heartfelt farewell to a remarkable career. This event is a special opportunity to honor your accomplishments and embark on a new chapter filled with relaxation, adventure, and well-deserved enjoyment.",
+    "description2": "Our dedicated event team ensures that every detail, from the venue selection to the heartfelt speeches and decor, is thoughtfully planned and executed. At EVENATOR, we believe retirement is not an end but a new beginning, and we aim to make this transition as memorable and joyous as your illustrious career. Let us help you create lasting memories and set the stage for a retirement filled with happiness and new experiences."
   },
   {
     "id": "5",
@@ -51,6 +85,14 @@
     "icon": "https://i.ibb.co/BKtH4yx/icons8-venue-50.png",
     "shortDescription": "Transform your dream wedding into a reality with our expert planning services, crafting perfect details and filling every moment with love and joy, from intimate ceremonies to grand celebrations.",
     "description": "lorem",
-    "price": "1200"
+    "price": "1980",
+    "hour": "9",
+    "person": "25-240",
+    "includ1": "Catering",
+    "includ2": "decoration",
+    "includ3": "Photography",
+    "includ4": "Entertainment",
+    "description1": "At EVENATOR, we specialize in transforming your dream wedding into a breathtaking reality. Our expert planning services ensure that every detail, from intimate ceremonies to grand celebrations, is crafted with perfection and filled with love and joy.",
+    "description2": "Our dedicated team understands that your wedding day is a momentous occasion, and we are committed to making it truly unforgettable. From venue selection to exquisite decor, trust EVENATOR to create a wedding experience that reflects your unique love story and leaves you with cherished memories to last a lifetime. Let us be your partner in celebrating the start of your beautiful journey together."
   }
 ]

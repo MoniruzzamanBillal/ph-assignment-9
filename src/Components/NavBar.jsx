@@ -29,12 +29,15 @@ const NavBar = () => {
       <div className="navWrapper flex justify-between w-[85%] m-auto items-center ">
         {/* nav left  */}
         <div className="navLeft  ">
-          <div className="navLeftImg">
+          <div className="navLeftImg  ">
             <Link
               to={`/`}
-              className="self-center cursor-pointer text-3xl font-semibold whitespace-nowrap "
+              className="self-center cursor-pointer  font-semibold whitespace-nowrap "
             >
-              <img src="/logo.png" className="  w-[90%] " alt="" />
+              <div className=" flex justify-center items-center  ">
+                <img src="/logo.png" className="  w-[35%] " alt="" />{" "}
+                <p className=" text-xl pl-2 ">Evenator</p>
+              </div>
             </Link>
           </div>
         </div>

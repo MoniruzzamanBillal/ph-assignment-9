@@ -16,7 +16,7 @@ const Login = () => {
   };
 
   return (
-    <div className="loginContainer  pt-[3.8rem]  ">
+    <div className="loginContainer  pt-[8rem] pb-[5rem]   ">
       <div className="loginWrapper">
         {/* login body   */}
         <div className="loginInput bg-gray-200 w-[88%] sm:w-[72%] md:w-[62%] lg:w-[46%] m-auto flex flex-col justify-center items-center py-5 sm:py-7 md:py-8 lg:py-9 px-4 sm:px-6 md:px-7 shadow-md ">
