@@ -23,12 +23,22 @@ const Router = createBrowserRouter([
       },
       {
         path: "/service",
-        element: <ServicePage />,
+        element: (
+          <PrivateRoute>
+            <ServicePage />
+          </PrivateRoute>
+        ),
       },
+
       {
         path: "/offer",
-        element: <Offers />,
+        element: (
+          <PrivateRoute>
+            <Offers />
+          </PrivateRoute>
+        ),
       },
+
       {
         path: "/pricing",
         element: <Pricing />,

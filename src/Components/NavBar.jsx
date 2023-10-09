@@ -41,6 +41,8 @@ const NavBar = () => {
       .catch((error) => console.log(error));
   };
 
+  console.log(user?.displayName);
+
   return (
     <div className="navContainer  py-2 bg-blue-100  fixed w-full z-20 shadow ">
       <div className="navWrapper flex justify-between w-[96%] lg:w-[88%] m-auto items-center ">
@@ -53,7 +55,7 @@ const NavBar = () => {
             >
               <div className=" flex justify-center items-center  ">
                 <img src="/logo.png" className="  w-[35%] " alt="" />{" "}
-                <p className=" text-xl pl-1 ">Evenator</p>
+                <p className=" text-base lg:text-xl pl-1 ">Evenator</p>
               </div>
             </Link>
           </div>
@@ -68,8 +70,8 @@ const NavBar = () => {
               key={ind}
               to={ele.link}
               className={`  ${
-                navLink.length - 1 === ind ? "mr-0" : "mr-8"
-              } text-lg text-color hover:text-blue-700`}
+                navLink.length - 1 === ind ? "mr-0" : "mr-5"
+              } text-base lg:text-lg text-color hover:text-blue-700`}
             >
               {ele.item}
             </NavLink>
@@ -85,18 +87,21 @@ const NavBar = () => {
             {/* avatar image  */}
             <div className="avaterImg pr-2">
               {user?.photoURL && (
-                <img
-                  className=" w-7 h-7 lg:w-9 lg:h-9  rounded-full ring-1 ring-gray-300 dark:ring-gray-500"
-                  src={user.photoURL}
-                  alt="Bordered avatar"
-                />
+                <div className="flex items-center gap-1">
+                  <p className=" text-xs lg:text-sm"> {user.displayName} </p>
+                  <img
+                    className=" w-7 h-7 lg:w-9 lg:h-9  rounded-full ring-1 ring-gray-300 dark:ring-gray-500"
+                    src={user.photoURL}
+                    alt="Bordered avatar"
+                  />
+                </div>
               )}
             </div>
             {/* avatar image  */}
 
             {user ? (
               <Link
-                className=" bg-gray-600 py-2 px-8  text-white font-semibold "
+                className=" bg-gray-600 py-2 px-3 lg:px-4  text-white font-semibold text-xs lg:text-sm  "
                 onClick={() => handleLogout()}
               >
                 Log out
@@ -104,7 +109,7 @@ const NavBar = () => {
             ) : (
               <Link
                 to={`/login`}
-                className=" bg-gray-600 py-2 px-8  text-white font-semibold "
+                className=" bg-gray-600 py-2 px-3 lg:px-4  text-white font-semibold text-xs lg:text-sm "
               >
                 Log in
               </Link>
