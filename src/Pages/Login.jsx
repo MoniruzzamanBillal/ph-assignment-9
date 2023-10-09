@@ -47,7 +47,7 @@ const Login = () => {
     emailLogin(emailInput.value, passwordInput.value)
       .then((user) => {
         addedSuccessFully();
-
+        alert("login ");
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {

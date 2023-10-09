@@ -10,3 +10,8 @@
 }
 
 /* shared css  */
+
+.active {
+  border-bottom: 2px solid rebeccapurple;
+  color: red;
+}

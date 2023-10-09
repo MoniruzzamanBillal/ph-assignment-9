@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import { RiMenu3Fill, RiCloseFill, RiXingLine } from "react-icons/ri";
 import { AppContext } from "../Context/Context";
@@ -11,19 +11,19 @@ const navLink = [
   },
   {
     item: "Services",
-    link: "#service",
+    link: "/service",
   },
   {
     item: "Offers",
-    link: "#offer",
+    link: "/offer",
   },
   {
     item: "Pricing",
-    link: "#pricing",
+    link: "/pricing",
   },
   {
     item: "About us",
-    link: "#about",
+    link: "/about",
   },
 ];
 
@@ -61,7 +61,8 @@ const NavBar = () => {
         {/* nav left  */}
 
         {/* nav Middle   */}
-        <div className="navMiddle hidden sm:flex   ">
+
+        {/* <div className="navMiddle hidden sm:flex   ">
           {navLink.map((ele, ind) => (
             <div
               key={ind}
@@ -70,12 +71,26 @@ const NavBar = () => {
               }  `}
             >
               <a href={ele.link} className="  cursor-pointer dark3 ">
-                {" "}
-                {ele.item}{" "}
+                {ele.item}
               </a>
             </div>
           ))}
+        </div> */}
+
+        <div className="navLinks">
+          {navLink.map((ele, ind) => (
+            <NavLink
+              key={ind}
+              to={ele.link}
+              className={`  ${
+                navLink.length - 1 === ind ? "mr-0" : "mr-8"
+              } text-lg text-color hover:text-blue-700`}
+            >
+              {ele.item}
+            </NavLink>
+          ))}
         </div>
+
         {/* nav Middle   */}
 
         {/* nav right  */}
