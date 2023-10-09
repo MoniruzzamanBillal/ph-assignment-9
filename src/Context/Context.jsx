@@ -63,6 +63,7 @@ const AppProvider = ({ children }) => {
     logOut,
     registerEmail,
     emailLogin,
+    setUser,
   };
 
   return <AppContext.Provider value={appValue}>{children}</AppContext.Provider>;

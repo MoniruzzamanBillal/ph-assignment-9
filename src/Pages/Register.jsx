@@ -9,7 +9,7 @@ import { updateProfile } from "firebase/auth";
 import LoadingScleton from "../Components/LoadingScleton";
 
 const Register = () => {
-  const { services, registerEmail, loading } = useContext(AppContext);
+  const { services, registerEmail, loading, setUser } = useContext(AppContext);
 
   const navigate = useNavigate();
 
@@ -50,7 +50,7 @@ const Register = () => {
           .catch((error) => {
             console.error("Error updating user profile:", error);
           });
-
+        setUser(null);
         navigate(`/login`);
       })
       .catch((error) => console.log(error));

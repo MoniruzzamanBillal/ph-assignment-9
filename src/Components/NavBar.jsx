@@ -84,20 +84,15 @@ const NavBar = () => {
           <div className="notMobile hidden sm:flex justify-center items-center ">
             {/* avatar image  */}
             <div className="avaterImg pr-2">
-              <img
-                className=" w-7 h-7 lg:w-9 lg:h-9  rounded-full ring-1 ring-gray-300 dark:ring-gray-500"
-                src={user?.photoURL}
-                alt="Bordered avatar"
-              />
+              {user?.photoURL && (
+                <img
+                  className=" w-7 h-7 lg:w-9 lg:h-9  rounded-full ring-1 ring-gray-300 dark:ring-gray-500"
+                  src={user.photoURL}
+                  alt="Bordered avatar"
+                />
+              )}
             </div>
             {/* avatar image  */}
-            {/* 
-            <Link
-              to={`/login`}
-              className=" bg-gray-600 py-1.5 lg:py-2 px-6 lg:px-7  text-white font-semibold "
-            >
-              Log in
-            </Link> */}
 
             {user ? (
               <Link
@@ -150,13 +145,35 @@ const NavBar = () => {
                     </div>
                   ))}
                 </div>
+
+                {user ? (
+                  <Link
+                    className=" bg-red-400  py-1.5 px-5  text-white "
+                    onClick={() => {
+                      handleLogout();
+                      handleToggle();
+                    }}
+                  >
+                    Log out
+                  </Link>
+                ) : (
+                  <Link
+                    to={`/login`}
+                    className=" bg-red-400  py-1.5 px-5  text-white "
+                    onClick={() => handleToggle()}
+                  >
+                    Log in
+                  </Link>
+                )}
+
+                {/* 
                 <Link
                   to={`/login`}
                   className=" bg-red-400  py-1.5 px-5  text-white "
                   onClick={() => handleToggle()}
                 >
                   Log in
-                </Link>
+                </Link> */}
               </div>
             )}
             {/* menu list  */}

@@ -6,6 +6,9 @@ import InputField from "../Components/InputField";
 import { AppContext } from "../Context/Context";
 import LoadingScleton from "../Components/LoadingScleton";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Login = () => {
   const { user, loading, emailLogin } = useContext(AppContext);
   const location = useLocation();
@@ -14,21 +17,44 @@ const Login = () => {
   const emailInput = UseInputHook();
   const passwordInput = UseInputHook();
 
-  console.log(loading);
-  console.log(user);
+  const addedSuccessFully = () =>
+    toast.success("logged in successfully!", {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
+
+  const errorlogin = () =>
+    toast.warn("Username or password is incorrect!!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "colored",
+    });
 
   const handleSubmit = () => {
     console.log("submit click");
+
     emailLogin(emailInput.value, passwordInput.value)
       .then((user) => {
+        addedSuccessFully();
+
         navigate(location?.state ? location.state : "/");
       })
-      .catch((erroe) => console.log(error));
+      .catch((error) => {
+        console.log(error);
+        errorlogin();
+      });
   };
-
-  if (loading) {
-    return <LoadingScleton />;
-  }
 
   return (
     <div className="loginContainer  pt-[8rem] pb-[5rem]   ">
@@ -64,6 +90,8 @@ const Login = () => {
           >
             Log in
           </button>
+
+          <ToastContainer />
 
           <p className="  mt-3 ">
             Dont’t Have An Account ?{" "}
