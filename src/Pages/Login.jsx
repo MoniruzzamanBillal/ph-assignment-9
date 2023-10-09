@@ -3,17 +3,32 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import UseInputHook from "../Hooks/InputHook";
 import InputField from "../Components/InputField";
+import { AppContext } from "../Context/Context";
+import LoadingScleton from "../Components/LoadingScleton";
 
 const Login = () => {
+  const { user, loading, emailLogin } = useContext(AppContext);
   const location = useLocation();
   const navigate = useNavigate();
 
   const emailInput = UseInputHook();
   const passwordInput = UseInputHook();
 
+  console.log(loading);
+  console.log(user);
+
   const handleSubmit = () => {
     console.log("submit click");
+    emailLogin(emailInput.value, passwordInput.value)
+      .then((user) => {
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((erroe) => console.log(error));
   };
+
+  if (loading) {
+    return <LoadingScleton />;
+  }
 
   return (
     <div className="loginContainer  pt-[8rem] pb-[5rem]   ">

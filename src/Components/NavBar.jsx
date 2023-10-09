@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { RiMenu3Fill, RiCloseFill, RiXingLine } from "react-icons/ri";
+import { AppContext } from "../Context/Context";
 
 const navLink = [
   {
@@ -27,11 +28,19 @@ const navLink = [
 ];
 
 const NavBar = () => {
+  const { user, logOut } = useContext(AppContext);
   const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
     setToggle(!toggle);
   };
+
+  const handleLogout = () => {
+    logOut()
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
+  };
+
   return (
     <div className="navContainer  py-2 bg-blue-100  fixed w-full z-20 shadow ">
       <div className="navWrapper flex justify-between w-[96%] lg:w-[88%] m-auto items-center ">
@@ -76,21 +85,21 @@ const NavBar = () => {
             {/* avatar image  */}
             <div className="avaterImg pr-2">
               <img
-                className=" w-7 h-7 lg:w-9 lg:h-9 p-1 rounded-full ring-1 ring-gray-300 dark:ring-gray-500"
-                src="../../src/assets/2.png"
+                className=" w-7 h-7 lg:w-9 lg:h-9  rounded-full ring-1 ring-gray-300 dark:ring-gray-500"
+                src={user?.photoURL}
                 alt="Bordered avatar"
               />
             </div>
             {/* avatar image  */}
-
+            {/* 
             <Link
               to={`/login`}
               className=" bg-gray-600 py-1.5 lg:py-2 px-6 lg:px-7  text-white font-semibold "
             >
               Log in
-            </Link>
+            </Link> */}
 
-            {/* {user ? (
+            {user ? (
               <Link
                 className=" bg-gray-600 py-2 px-8  text-white font-semibold "
                 onClick={() => handleLogout()}
@@ -104,7 +113,7 @@ const NavBar = () => {
               >
                 Log in
               </Link>
-            )} */}
+            )}
           </div>
 
           {/* !mobile view  */}

@@ -4,8 +4,13 @@ import { Link, useNavigate } from "react-router-dom";
 
 import UseInputHook from "../Hooks/InputHook";
 import InputField from "../Components/InputField";
+import { AppContext } from "../Context/Context";
+import { updateProfile } from "firebase/auth";
+import LoadingScleton from "../Components/LoadingScleton";
 
 const Register = () => {
+  const { services, registerEmail, loading } = useContext(AppContext);
+
   const navigate = useNavigate();
 
   const nameInput = UseInputHook();
@@ -21,17 +26,44 @@ const Register = () => {
 
   const handleRegister = () => {
     console.log("register click");
+    if (!isChecked) {
+      return alert("terms not selected");
+    }
 
-    console.log(nameInput.value);
-    console.log(imageInput.value);
-    console.log(emailInput.value);
-    console.log(passwordInput.value);
+    // console.log(nameInput.value);
+    // console.log(imageInput.value);
+    // console.log(emailInput.value);
+    // console.log(passwordInput.value);
 
-    nameInput.reset();
-    imageInput.reset();
-    emailInput.reset();
-    passwordInput.reset();
+    registerEmail(emailInput.value, passwordInput.value)
+      .then((result) => {
+        // console.log(user);
+
+        // Update the user's profile
+        const displayName = nameInput.value;
+        const photoURL = imageInput.value;
+
+        updateProfile(result.user, { displayName, photoURL })
+          .then((user) => {
+            console.log("User profile updated successfully:", user);
+          })
+          .catch((error) => {
+            console.error("Error updating user profile:", error);
+          });
+
+        navigate(`/login`);
+      })
+      .catch((error) => console.log(error));
+
+    // nameInput.reset();
+    // imageInput.reset();
+    // emailInput.reset();
+    // passwordInput.reset();
   };
+
+  if (loading) {
+    return <LoadingScleton />;
+  }
 
   return (
     <div className="RegisterContainer pt-[8rem] pb-[5rem]  ">

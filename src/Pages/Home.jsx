@@ -4,6 +4,7 @@ import Services from "../Components/Services";
 import WhatOffer from "./WhatOffer";
 import HolidayPackage from "../Components/HolidayPackage";
 import Team from "../Components/Team";
+import LoadingScleton from "../Components/LoadingScleton";
 
 const Home = () => {
   return (
