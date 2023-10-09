@@ -7,6 +7,8 @@ import InputField from "../Components/InputField";
 import { AppContext } from "../Context/Context";
 import { updateProfile } from "firebase/auth";
 
+import { FcGoogle } from "react-icons/fc";
+
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -95,7 +97,7 @@ const Register = () => {
     );
   };
 
-  // registration password
+  // registration function
   const handleRegister = () => {
     console.log("register click");
 

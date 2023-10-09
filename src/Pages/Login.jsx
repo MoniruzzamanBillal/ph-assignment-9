@@ -4,9 +4,12 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import UseInputHook from "../Hooks/InputHook";
 import InputField from "../Components/InputField";
 import { AppContext } from "../Context/Context";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { FcGoogle } from "react-icons/fc";
+import auth from "../Firebase.config";
 
 const Login = () => {
   const { user, loading, emailLogin } = useContext(AppContext);
@@ -42,8 +45,9 @@ const Login = () => {
       theme: "colored",
     });
 
+  // email login
   const handleSubmit = () => {
-    console.log("submit click");
+    // console.log("submit click");
 
     emailLogin(emailInput.value, passwordInput.value)
       .then((user) => {
@@ -60,6 +64,23 @@ const Login = () => {
 
     emailInput.reset();
     passwordInput.reset();
+  };
+
+  // google login
+  const handleGoogleLogin = () => {
+    console.log("google login click");
+    const googleProvider = new GoogleAuthProvider();
+    console.log(googleProvider);
+    console.log(auth);
+    signInWithPopup(auth, googleProvider)
+      .then((response) => {
+        addedSuccessFully();
+
+        setTimeout(() => {
+          navigate(location?.state ? location.state : "/");
+        }, "1200");
+      })
+      .catch((error) => console.log(error));
   };
 
   return (
@@ -98,6 +119,19 @@ const Login = () => {
           </button>
 
           <ToastContainer />
+
+          {/* google sign  */}
+
+          <p
+            className="  mt-3 cursor-pointer hover:underline flex items-center text-xl gap-2 "
+            onClick={() => handleGoogleLogin()}
+          >
+            Sign in with
+            <span className="text-2xl">
+              <FcGoogle />
+            </span>{" "}
+          </p>
+          {/* google sign  */}
 
           <p className="  mt-3 ">
             Dont’t Have An Account ?{" "}
